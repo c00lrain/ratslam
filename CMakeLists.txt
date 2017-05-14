@@ -154,3 +154,10 @@ install(DIRECTORY src/media/
 
 install(DIRECTORY ${CMAKE_CURRENT_BINARY_DIR}/config/
   DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}/config)
+
+## TESTS
+catkin_add_gtest(experience_map_unit_test src/tests/experience_map_unit_test.cpp)
+target_link_libraries(experience_map_unit_test
+  ${catkin_LIBRARIES}
+  ratslam
+)
