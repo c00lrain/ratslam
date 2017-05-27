@@ -1,0 +1,27 @@
+<library path="lib/libratslam_ros">
+
+    <class name="ratslam_ros/ExperienceMap" type="ratslam_ros::ExperienceMapNodelet" base_class_type="nodelet::Nodelet">
+        <description>
+            This nodelet wraps the ratslam experience map.
+        </description>
+    </class>
+
+    <class name="ratslam_ros/LocalView" type="ratslam_ros::LocalViewNodelet" base_class_type="nodelet::Nodelet">
+        <description>
+            This nodelet wraps the ratslam local view matcher.
+        </description>
+    </class>
+
+    <class name="ratslam_ros/PoseCell" type="ratslam_ros::PoseCellNodelet" base_class_type="nodelet::Nodelet">
+        <description>
+            This nodelet wraps the ratslam pose cell network.
+        </description>
+    </class>
+
+    <class name="ratslam_ros/VisualOdometry" type="ratslam_ros::VisualOdometryNodelet" base_class_type="nodelet::Nodelet">
+        <description>
+            This nodelet wraps the ratslam visual odometry.
+        </description>
+    </class>
+
+</library>
